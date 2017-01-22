@@ -17,7 +17,7 @@ def get_online_friends(login, password):
         app_id=APP_ID,
         user_login=login,
         user_password=password,
-        scope='friends' # Тут вопрос
+        scope='friends'
     )
     api = vk.API(session)
     friends_online_id = api.friends.getOnline()
